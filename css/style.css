@@ -1,8 +1,6 @@
 *,
 *::before,
-*::after {
-  box-sizing: border-box;
-}
+*::after { box-sizing: border-box; }
 
 body {
   max-width: 1024px;
@@ -26,7 +24,6 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   padding-top: 30px;
   padding-left: 120px;
   padding-bottom: 20px;
@@ -45,30 +42,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 300px;
   padding: 0 20px;
 }
 
-.header__icon {
-  fill: #000000;
-}
+.header__icon { fill: #000000; }
 
-.header__icon:hover {
-  fill: rgba(0, 0, 255, 0.75);
-}
+.header__icon:hover { fill: rgba(0, 0, 255, 0.75); }
 
 .columns {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   max-height: 600px;
 }
 
 .avatar {
   display: flex;
-  
   width: 300px;
   height: 600px;
   padding-top: 20px;
@@ -76,9 +66,7 @@ body {
   object-fit: contain;
 }
 
-.goal {
-  margin-top: 90px;
-}
+.goal { margin-top: 90px; }
 
 .goal,
 .skills,
@@ -103,7 +91,6 @@ body {
 .languages__title {
   display: flex;
   justify-content: center;
-
   margin: 0;
   padding: 0;
 }
@@ -111,9 +98,7 @@ body {
 .skills__list,
 .education__list,
 .languages__list,
-.samples__list {
-  list-style: none;
-}
+.samples__list { list-style: none; }
 
 .skills__list-item,
 .education__list-item,
@@ -140,9 +125,7 @@ body {
   content: "";
 }
 
-.samples__title {
-  margin-bottom: 30px;
-}
+.samples__title { margin-bottom: 30px; }
 
 .samples__list {
   display: flex;
@@ -158,9 +141,7 @@ body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
-.samples__list-item:hover {
-  box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.75);
-}
+.samples__list-item:hover { box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.75); }
 
 .samples__img {
   width: 400px;
