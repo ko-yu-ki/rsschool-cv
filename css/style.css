@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+
+  border: 1px dashed grey;
+}
+
+.header,
+.main {
+  position: relative;
+  z-index: 100;
+
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-left: 120px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px dashed grey;
+}
+
+.header__title {
+  position: relative;
+  z-index: 100;
+
+  margin-right: 130px;
+  font-size: 36px;
+}
+
+.header__title::after {
+  position: absolute;
+  top: 20px;
+  left: -270px;
+  z-index: 10;
+
+  width: 100%;
+  height: 2000%;
+
+  background-image: url(../img/novice.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 300px;
+  padding: 0 20px;
+}
+
+.header__icon {
+  fill: #000000;
+}
+
+.header__icon:hover {
+  fill: rgba(0, 0, 255, 0.75);
+}
+
+.goal {
+  margin-top: 90px;
+}
+
+.goal,
+.skills,
+.samples,
+.education,
+.languages {
+  margin-bottom: 50px;
+}
+
+.goal__title,
+.skills__title,
+.samples__title,
+.education__title,
+.languages__title {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.goal__text {
+  padding-left: 340px;
+}
+
+.skills__list,
+.education__list,
+.languages__list,
+.samples__list {
+  list-style: none;
+}
+
+.skills__list {
+  padding-left: 340px;
+}
+
+.skills__list-item,
+.education__list-item,
+.languages__list-item {
+  position: relative;
+
+  padding-left: 50px;
+  
+  line-height: 24px;
+}
+
+.skills__list-item::before,
+.education__list-item::before,
+.languages__list-item::before {
+  position: absolute;
+  top: center;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../img/poring-.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.samples__title {
+  margin-bottom: 30px;
+}
+
+.samples__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.samples__list-item {
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.samples__list-item:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.75);
+}
+
+.samples__img {
+  width: 400px;
+  max-height: 600px;
+
+  object-fit: scale-down;
+}
